@@ -1,0 +1,29 @@
+
+[
+    {
+        "what": {"label": "Machine learning", "link":"#"},
+        "where":"Stanford university",
+        "when":"Sep-2020",
+        "description": "~60 hours of lectures and exercises/projects."
+    },
+    {
+        "what": {"label": "Deep learning and neural networks", "link":"#"},
+        "where":"Coursera",
+        "when":"Oct-2020",
+        "description": "~60 hours of lectures and exercises/projects."
+    },
+    {
+        "what": {"label": "React-JS", "link":"#"},
+        "where":"Udemy",
+        "when":"Aug-2020",
+        "description": "~60 hours of lectures and exercises/projects."
+    },
+    {
+        "what": {"label": "8 certificates from FreeCodeCamp covering a broad spectrum of topics on web development and data science.", "link":"#"},
+        "where":"FreeCodeCamp",
+        "when":"2020",
+        "description": "~1000 hours of coding challenges and projects."
+    }
+
+    
+]

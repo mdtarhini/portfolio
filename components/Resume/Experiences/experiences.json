@@ -1,0 +1,39 @@
+
+
+[
+    {
+        "what":"Postdoctoral Fellowship",
+        "where":{
+                "label": "The French National Center for Scientific Research (CNRS) - Nantes, France",
+                "link": "#"
+            },
+        "when":{
+            "start": "Oct-2017",
+            "end": "Nov-2020"
+        },
+        "description":"Analysis of data collected at CERN-Geneva aiming to study (together with 1800+ international collaborators) the state of the universe shortly after the big-bang.",
+        "accomplishments": [
+                "Coordination of a large analysis group (40+ members), contributing to the publication and review of 10+ papers on the aforementioned subject.",
+                "Supervision of 4 PhD and master students."
+            ]
+            
+    },
+    {
+        "what":"PhD in Particle Physics",
+        "where":{
+                "label": "Nuclear Physics Institute, Orsay-France (IPNO)",
+                "link": "#"
+            },
+        "when":{
+            "start": "Sep-2014",
+            "end": "Oct-2017"
+        },
+        "description":"Study of the nuclear structure of the lead ion as well as the quark-gluon-plasma (a state of matter at extreme temperatures) by analyzing experimental data collected at CERN.",
+        "accomplishments": [
+                "Publication of 3 papers on the subjects in international journals.",
+                "Developing and using frameworks to analyze large collections of data"   
+            ]
+            
+    }
+]
+
