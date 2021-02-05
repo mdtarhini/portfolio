@@ -12,10 +12,10 @@ export default function Index() {
         heading="Hi I'm Mohamad Tarhini"
         subHeading={
           <span>
-            I am a &#10102; web developer, &#10103; physicist and &#10104; data
+            I am a &#10102;-web developer, &#10103;-physicist and &#10104;-data
             analyst based in France. This is my slice of the internet where I
             show my work in &#10102;, briefly mention &#10103; and nearly say
-            nothing about &#10104;.
+            almost about &#10104;.
           </span>
         }
         image={

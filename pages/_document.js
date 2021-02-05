@@ -17,11 +17,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,300;1,700&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;700&display=swap"
             rel="stylesheet"
           />
         </Head>

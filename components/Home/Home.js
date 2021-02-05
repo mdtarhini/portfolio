@@ -15,7 +15,7 @@ const Home = ({ heading, subHeading, image, noCorners }) => {
 
       <div className="w-full  md:max-w-xl xl:max-w-2xl flex flex-col justify-center space-y-5 md:space-y-10 px-3 py-4 md:px-6 md:py-8">
         <p
-          className={`w-full relative md:text-lg lg:text-xl lg:leading-loose break-words ${
+          className={`w-full relative md:text-lg lg:text-xl lg:leading-loose break-words text-justify ${
             !noCorners ? "p-5" : ""
           }`}
         >

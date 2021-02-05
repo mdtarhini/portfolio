@@ -2,7 +2,7 @@
 const { colors } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  // purge: ["./pages/**/*.js", "./components/**/*.js"],
+  purge: ["./pages/**/*.js", "./components/**/*.js"],
 
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -130,7 +130,7 @@ module.exports = {
       fontFamily: {
         montserrat: "Montserrat, sans-serif",
         "roboto-mono": "Roboto Mono, monospace",
-        courgette: "Courgette, cursive",
+        lemonada: "Lemonada, cursive",
       },
 
       colors: {
