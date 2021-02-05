@@ -1,13 +1,12 @@
-import React from "react";
 import SectionTitle from "../Common/section-title";
 import SocialMediaButton from "./social-media-button";
 import InfoItem from "./info-item";
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-const Profile = ({ title }) => {
+const Profile = ({ email, linkedInLink, githubLink, twitterLink }) => {
   return (
     <div>
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-start md:space-x-4 w-full text-center md:text-left">
-        <div className="w-40 md:w-full border-2 border-black dark:border-white rounded-full flex items-center justify-center p-1">
+        <div className="w-40 max-w-full border-2 border-black dark:border-white rounded-full flex items-center justify-center p-1">
           <img
             className="object-fill w-full h-full rounded-full"
             src="/profile.jpg"
@@ -16,34 +15,46 @@ const Profile = ({ title }) => {
         </div>
         <div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl">Mohamad Tarhini</h1>
-          <hr className="my-3" />
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Physicist, Data analyst, and web developper
+
+          <p className="mt-3 text-lg text-gray-600 dark:text-gray-400">
+            Web developper, physicist, and data analyst
           </p>
-          <hr className="my-3" />
-          <p>
-            <span>&ldquo;</span>I am a data scientist with a PhD in data
-            analysis applied to high energy physics and over 5 years of
-            professional experience. Up to now, my career was mainly centered
-            around utilizing data analysis tools in studying high energy physics
-            topics. I am currently looking for job opportunities where I
-            <span>&rdquo;</span>
+
+          <p className="mt-3">
+            <span className="text-3xl">&#8220;</span>Fast learner with strong
+            problem solving and programming skills
+            <span className="text-3xl">&#8221;</span>
           </p>
         </div>
       </div>
-      <br />
-      <div id="resume-personal">
-        <SectionTitle title={title} />
+
+      <div className="mt-10">
+        <SectionTitle title="Personal Information" />
         <InfoItem title="Born" content="January 1991, Ebba-Lebanon" />
         <InfoItem title="Address" content="Nantes, France" />
-        <InfoItem title="Email" content="mdtarhini@outlook.com" />
+        <InfoItem
+          title="Email"
+          content={<span className="select-all">{email}</span>}
+        />
         <InfoItem
           title="Find me on"
           content={
             <div className="flex space-x-2">
-              <SocialMediaButton icon={<FaGithub />} />
-              <SocialMediaButton icon={<FaTwitter />} />
-              <SocialMediaButton icon={<FaLinkedinIn />} />
+              <SocialMediaButton
+                icon={<FaGithub />}
+                href={githubLink}
+                label="github"
+              />
+              <SocialMediaButton
+                icon={<FaTwitter />}
+                href={twitterLink}
+                label="twitter"
+              />
+              <SocialMediaButton
+                icon={<FaLinkedinIn />}
+                href={linkedInLink}
+                label="linked-in"
+              />
             </div>
           }
         />

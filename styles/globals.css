@@ -9,18 +9,3 @@ html,
 .remove-btn {
   margin-right: 0.5rem;
 }
-
-.message-from-me-enter,
-.message-from-them-enter {
-  opacity: 0;
-}
-
-.message-from-me-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.message-from-them-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-in;
-}

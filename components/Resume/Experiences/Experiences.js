@@ -1,13 +1,11 @@
-import React from "react";
-import experiences from "./experiences.json";
 import SectionTitle from "../Common/section-title";
 import OneExperience from "./one-experience";
-const Experiences = ({ title }) => {
+const Experiences = ({ title, data }) => {
   return (
     <div>
       <SectionTitle title={title} />
 
-      {experiences.map((exp, index) => {
+      {data.map((exp, index) => {
         return <OneExperience key={index} data={exp} />;
       })}
     </div>

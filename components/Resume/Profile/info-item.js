@@ -1,11 +1,9 @@
-import React from "react";
-
 const InfoItem = (props) => {
   return (
     <div className="mb-4">
-      <p className="text-xl font-bold">{props.title}</p>
-      <hr className="mb-2" />
-      {props.content}
+      <h3 className="text-xl font-bold">{props.title}</h3>
+      <hr className="dark:border-eerie mb-2" />
+      <p>{props.content}</p>
     </div>
   );
 };

@@ -1,0 +1,115 @@
+{
+    "profile":"",
+    "experience":
+    [
+        {
+            "what":"Postdoctoral Fellowship",
+            "where":{
+                    "label": "The French National Center for Scientific Research (CNRS) - Nantes, France",
+                    "link": "#"
+                },
+            "when":{
+                "start": "Oct-2017",
+                "end": "Nov-2020"
+            },
+            "description":"Analysis of data collected at CERN-Geneva aiming to study (together with 1800+ international collaborators) the state of the universe shortly after the big-bang.",
+            "accomplishments": [
+                    "Coordination of a large analysis group (40+ members), contributing to the publication and review of 10+ papers on the aforementioned subject.",
+                    "Supervision of 4 PhD and master students."
+                ]
+                
+        },
+        {
+            "what":"PhD in Particle Physics",
+            "where":{
+                    "label": "Nuclear Physics Institute, Orsay-France (IPNO)",
+                    "link": "#"
+                },
+            "when":{
+                "start": "Sep-2014",
+                "end": "Oct-2017"
+            },
+            "description":"Study of the nuclear structure of the lead ion as well as the quark-gluon-plasma (a state of matter at extreme temperatures) by analyzing experimental data collected at CERN.",
+            "accomplishments": [
+                    "Publication of 3 papers on the subjects in international journals.",
+                    "Developing and using frameworks to analyze large collections of data"   
+                ]
+                
+        }
+    ]
+    ,"education":
+    [
+        {
+            "what":"PhD in particle physics",
+            "where":{
+                    "label": "Paris-Saclay University - Paris, France",
+                    "link": "#"
+                },
+            "when":{
+                "start": "2014",
+                "end": "2017"
+            }    
+        },
+        {
+            "what":"Master's degree in high energy physics",
+            "where":{
+                    "label": "Paris-VI University - Paris, France",
+                    "link": "#"
+                },
+            "when":{
+                "start": "2012",
+                "end": "2014"
+            }    
+        },
+        {
+            "what":"Bachelor of science (physics)",
+            "where":{
+                    "label": "Lebanese university - Nabatieh, Lebanon",
+                    "link": "#"
+                },
+            "when":{
+                "start": "2009",
+                "end": "2012"
+            }    
+        }
+    ]
+    
+    ,"skills": 
+    "", 
+    "certifications"
+    :[
+    {
+        "what": {"label": "Machine learning", "link":"#"},
+        "where":"Stanford university",
+        "when":"Sep-2020",
+        "description": "~60 hours of lectures and exercises/projects."
+    },
+    {
+        "what": {"label": "Deep learning and neural networks", "link":"#"},
+        "where":"Coursera",
+        "when":"Oct-2020",
+        "description": "~60 hours of lectures and exercises/projects."
+    },
+    {
+        "what": {"label": "8 certificates from FreeCodeCamp", "link":"#"},
+        "where":"FreeCodeCamp",
+        "when":"2020",
+        "description": "~1000 hours of coding challenges and projects covering various topic in web development and data science."
+    }
+
+    
+],"awards":[
+    {
+        "what": {"label": "ALICE best thesis award", "link":"#"},
+        
+        "when":"2019",
+        "description": "Awarded yearly for the best thesis within the ALICE collaboration at CERN (housing ~100 PhD students)"
+    },
+    {
+        "what": {"label": "Paris Chancellerie thesis prize", "link":"#"},
+        
+        "when":"2018",
+        "description": "Awarded yearly to the best theses performed in one of Paris' univeristies."
+    }  
+]
+}
