@@ -5,7 +5,7 @@ description: "A social network for people seeking career changes"
 tags: ["react", "react-hooks", "react-router", "firebase"]
 thumbnail: "/projects/job.svg"
 thumbnailAlt: "A thumbnail displaying four persons exchanging ideas"
-image: "/projects/unune.png"
+screenshot: "/projects/career-change.png"
 website: "#"
 github: "#"
 ---

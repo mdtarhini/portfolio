@@ -1,5 +1,6 @@
 import { getAllProjectIds, getProjectDetails } from "../../lib/projects";
 import Head from "next/head";
+import Image from "next/image";
 import { FaGithub, FaLink } from "react-icons/fa";
 import PageLayout from "../../components/Common/page-layout";
 
@@ -30,13 +31,14 @@ export default function Project({ projectDetails }) {
         <main className="w-full py-10 px-3 md:px-10 lg:px-24 xl:px-44 leading-loose text-base">
           <div className="flex flex-col lg:flex-row items-end justify-between">
             <div className="w-full lg:w-1/2">
-              <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold mb-2">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2">
                 {projectDetails.title}
               </h1>
               <p className="mb-4 text-xl">{projectDetails.description}</p>
               <div className="flex space-x-2">
                 {projectDetails.github && (
                   <a
+                    rel="noopener"
                     href={projectDetails.github}
                     className="rounded-full w-12 h-12 text-xl bg-gray-200 dark:bg-gray-500  flex items-center justify-center transition duration-300 ease-in-out transform hover:bg-gray-300 dark:hover:bg-gray-700"
                   >
@@ -46,6 +48,7 @@ export default function Project({ projectDetails }) {
                 )}
                 {projectDetails.website && (
                   <a
+                    rel="noopener"
                     href={projectDetails.website}
                     className="rounded-full w-12 h-12 text-xl bg-gray-200 dark:bg-gray-500  flex items-center justify-center transition duration-300 ease-in-out transform hover:bg-gray-300 dark:hover:bg-gray-700"
                   >
@@ -56,12 +59,19 @@ export default function Project({ projectDetails }) {
               </div>
             </div>
             <div className="mt-6 lg:mt-0 w-full lg:w-1/2 flex justify-center lg:justify-end">
-              <a href={projectDetails.website}>
-                <img
-                  alt="Website screenshot"
-                  src={projectDetails.image}
-                  className="w-full md:w-80 max-w-80 shadow-sm border-2 border-gray-200 rounded-lg"
-                />
+              <a href={projectDetails.website} rel="noopener">
+                <div className="border-2 border-gray-300 dark:border-white rounded-sm flex justify-center">
+                  <Image
+                    alt="Website screenshot"
+                    src={projectDetails.screenshot}
+                    width={500}
+                    height={Math.floor(
+                      500 * projectDetails.screenshotHtoWRatio
+                    )}
+                    quality={100}
+                    // className="rounded-sm"
+                  />
+                </div>
               </a>
             </div>
           </div>

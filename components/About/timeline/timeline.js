@@ -3,17 +3,17 @@ import { FaBaby, FaCode, FaGlobe } from "react-icons/fa";
 import { GiBrightExplosion, GiArchiveResearch } from "react-icons/gi";
 const items = [
   {
-    colors: { light: "red-600", dark: "red-500" },
+    colors: { light: "gray-700", dark: "red-500" },
     year: (
       <span className="text-lg">
         ~13.7&#215;10<sup>9</sup> <span className="text-base">years ago</span>
       </span>
     ),
-    text: "Big-Bang: the universe was born.",
+    text: "The Big Bang",
     icon: <GiBrightExplosion />,
   },
   {
-    colors: { light: "yellow-500", dark: "yellow-400" },
+    colors: { light: "red-500", dark: "yellow-400" },
     year: "1989",
     text: "The web was born at CERN",
     icon: <FaGlobe />,
@@ -27,7 +27,7 @@ const items = [
   {
     colors: { light: "blue-500", dark: "blue-400" },
     year: "2017",
-    text: "I studied the big-bang at CERN",
+    text: "I studied the Big Bang at CERN",
     icon: <GiArchiveResearch />,
   },
   {
@@ -38,20 +38,12 @@ const items = [
   },
 ];
 const Timeline = () => {
-  const nItems = items.length;
-  //Accepted length portions in tailwind 1/2, 1/3, /1/4, 1/5,1/6, 1/12
-  let mdWidth;
-  if ([2, 3, 4, 5, 6, 12].includes(nItems)) {
-    mdWidth = `1/${nItems}`;
-  } else if (nItems < 12) {
-    mdWidth = "1/12";
-  } else mdWidth = "24";
-
   return (
     <div className="w-full flex flex-col md:flex-row md:mt-48">
       {items.map((item, index) => {
         return (
           <TimelinePiece
+            key={index}
             roundedLeft={index === 0}
             roundedRight={index === items.length - 1}
             reversed={index % 2 !== 0}

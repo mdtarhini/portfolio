@@ -13,12 +13,9 @@ const elements = [
   { label: "Resume", icon: <RiPagesLine />, href: "/resume" },
 ];
 const Navigation = ({ toggleDrawer }) => {
-  const getBasePathName = (str) => {
-    return str.indexOf("/", 1) === -1 ? str : str.slice(0, str.indexOf("/", 1));
-  };
   const router = useRouter();
   return (
-    <nav className="flex flex-col space-y-6 md:flex-row md:items-center md:space-y-0 py-10 md:py-0 lg:text-lg font-montserrat font-semibold">
+    <nav className="flex flex-col space-y-6 md:flex-row md:items-center md:space-y-0 py-10 md:py-0 lg:text-lg font-semibold">
       {elements.map((element) => {
         return (
           <Link href={element.href} key={element.href}>
@@ -33,11 +30,9 @@ const Navigation = ({ toggleDrawer }) => {
               <span className="text-3xl mr-2 md:hidden">{element.icon}</span>
               {element.label}
               <div
-                className={`absolute -bottom-1 bg-gradient-to-r from-gray-900 dark:from-white to-gray-200 dark:to-black left-0 hidden ${
-                  getBasePathName(router.pathname) === element.href
-                    ? "md:block"
-                    : "md:hidden"
-                } w-full h-0.5 bg-yellow-50`}
+                className={`absolute -bottom-0.5 left-0 bg-gray-700 dark:bg-white   hidden rounded-full  ${
+                  element.href === router.pathname ? "md:block" : "md:hidden"
+                } w-full h-0.5`}
               ></div>
             </a>
           </Link>

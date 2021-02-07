@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { VscFilePdf } from "react-icons/vsc";
+import { FaFileDownload } from "react-icons/fa";
 import Awards from "../components/Resume/Awards/Awards";
 import Education from "../components/Resume/Education/Education";
 import Certifications from "../components/Resume/Certifications/Certifications";
@@ -70,12 +70,19 @@ const Resume = ({ data, email, githubLink, twitterLink, linkedInLink }) => {
             id="resume"
             className="w-full max-w-5xl  text-black dark:text-white relative shadow-lg dark:shadow-md"
           >
-            <button className="absolute top-2 right-2 text-2xl w-12 h-12 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 flex justify-center items-center">
+            <a
+              href="https://docs.google.com/uc?export=download&id=1ICsfYogI4lbnSqRV3wyI1kLOOtLM8TAj"
+              // href="https://drive.google.com/file/d/1ICsfYogI4lbnSqRV3wyI1kLOOtLM8TAj/view?usp=sharing"
+              download
+              className="absolute top-2 right-2 text-2xl w-12 h-12 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 flex justify-center items-center"
+              title="download as pdf"
+            >
               <span className="sr-only">Download as PDF</span>
+
               <span>
-                <VscFilePdf />
+                <FaFileDownload />
               </span>
-            </button>
+            </a>
             <div id="resume-sections" className="py-10 px-3 md:px-6 lg:px-12 ">
               <Profile
                 email={email}

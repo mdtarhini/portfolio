@@ -5,7 +5,7 @@ description: "A React+Firebase application which tells you whether a French noun
 tags: ["react", "firebase", "REST api", "tailwind-css"]
 thumbnail: "/projects/thinking.svg"
 thumbnailAlt: "A thumbnail displaying a thinking emoji"
-image: "/projects/unune.png"
+screenshot: "/projects/unune.png"
 website: "#"
 github: "#"
 ---

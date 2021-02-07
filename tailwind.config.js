@@ -129,8 +129,6 @@ module.exports = {
       }),
       fontFamily: {
         montserrat: "Montserrat, sans-serif",
-        "roboto-mono": "Roboto Mono, monospace",
-        lemonada: "Lemonada, cursive",
       },
 
       colors: {

@@ -1,4 +1,4 @@
-import React,{ useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { VscHubot, VscClose } from "react-icons/vsc";
 import Message from "./message";
 
@@ -70,21 +70,18 @@ const Chat = () => {
         </button>
       )}
       <div
-        className={`fixed top-16 md:top-20 p-2 w-full h-full bg-black bg-opacity-70 md:h-auto md:bg-transparent md:w-2/3 lg:w-1/2 xl:w-1/3 right-0 ease-in-out transition-all duration-300 transform translate-x-${
-          chatVisibility ? "0" : "full"
+        className={`fixed top-16 md:top-20 p-2 w-full h-full bg-black bg-opacity-70 md:h-auto md:bg-transparent md:w-2/3 lg:w-1/2 xl:w-1/3 right-0 ease-in-out transition-all duration-300 transform ${
+          chatVisibility ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div
           ref={chatTopRef}
           className={`w-full bg-gray-100 dark:bg-eerie rounded-t-xl text-base relative`}
-          style={{
-            backgroundImage: `url(/chat-bg-${theme}.svg)`,
-          }}
         >
           <div className="w-full bg-gray-300 dark:bg-gray-700 text-black dark:text-white flex p-1 md:px-2 md:py-5 justify-between items-center rounded-t-md">
             <div className="text-lg ">
               <span>
-                Trivia A
+                Trivia a
                 <span className="text-2xl xs:text-xl font-bold">bo</span>u
                 <span className="text-2xl xs:text-xl font-bold">t</span>
                 <span> {"  "}me.</span>

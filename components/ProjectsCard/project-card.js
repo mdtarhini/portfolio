@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaGithub, FaLink, FaArrowRight } from "react-icons/fa";
+
 const ProjectCard = ({
   title,
   description,
@@ -13,11 +15,14 @@ const ProjectCard = ({
   return (
     <div className="group w-full md:flex border-2 rounded-xl border-gray-600 dark:border-white bg-white dark:bg-black">
       <div className="w-full md:w-1/3 p-10 bg-gray-100 dark:bg-gray-800 flex justify-center items-center border-b-2 md:border-b-0 md:border-r-2 rounded-t-xl md:rounded-t-none md:rounded-l-xl border-gray-600 dark:border-white">
-        <img
-          className="object-fit h-32 md:h-36"
-          src={thumbnail}
-          alt={thumbnailAlt}
-        />
+        <div className="h-32 w-32 md:h-36 md:w-36 relative p-2">
+          <Image
+            src={thumbnail}
+            alt={thumbnailAlt}
+            layout="fill"
+            objectFit="fill"
+          />
+        </div>
       </div>
 
       <div className="text-center md:text-left md:w-2/3 mt-2 flex flex-col space-y-3 md:space-y-4 justify-between md:items-start">
@@ -53,7 +58,6 @@ const ProjectCard = ({
         <div className="w-full flex justify-end  border-gray-600 dark:border-white">
           <Link href={`/projects/${id}`}>
             <button
-              href="https://www.facebook.com"
               className={`hidden md:flex h-12 text-xl border-t-2  border-gray-600 dark:border-white items-center justify-center focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-200 transition duration-300 ease-in-out transform hover:bg-gray-200 dark:hover:bg-gray-700 ${
                 github && website
                   ? "w-1/3 border-r-2"
@@ -73,6 +77,7 @@ const ProjectCard = ({
           {github && (
             <a
               href={github}
+              rel="noopener"
               className="w-1/2 md:w-1/3 h-12 text-xl border-t-2 bg-gray-100 dark:bg-gray-700 md:bg-transparent md:dark:bg-transparent border-r-2 rounded-bl-xl md:rounded-none border-gray-600 dark:border-white flex items-center justify-center  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:bg-gray-200 dark:hover:bg-gray-700"
             >
               <span>
@@ -86,6 +91,7 @@ const ProjectCard = ({
             <a
               className="w-1/2 md:w-1/3 h-12 text-xl border-t-2 border-gray-600 dark:border-white bg-gray-100 dark:bg-gray-700 md:bg-transparent md:dark:bg-transparent flex items-center justify-center rounded-br-xl focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500 transition duration-300 ease-in-out transform hover:bg-gray-200 dark:hover:bg-gray-700"
               href={website}
+              rel="noopener"
             >
               <span>
                 <FaLink />

@@ -16,14 +16,16 @@ const Contact = ({ email, twitter, linkedIn }) => {
       <ul className="flex flex-wrap">
         {social.map((item) => {
           return (
-            <a
-              className="flex space-x-2 mr-6 mb-2 items-center underline"
-              key={item.label}
-              href={item.link}
-            >
-              <span className="text-2xl">{item.icon}</span>
-              <span className="">{item.label}</span>
-            </a>
+            <li key={item.label}>
+              <a
+                className="flex space-x-2 mr-6 mb-2 items-center underline"
+                href={item.link}
+                rel="noopener"
+              >
+                <span className="text-2xl">{item.icon}</span>
+                <span className="">{item.label}</span>
+              </a>
+            </li>
           );
         })}
       </ul>

@@ -2,7 +2,7 @@ import NavCards from "./nav-cards";
 import ThemeSwitcher from "../Navbar/theme-switcher";
 const Home = ({ heading, subHeading, image, noCorners }) => {
   return (
-    <main className="w-full font-montserrat  text-gray-900 dark:text-white">
+    <main className="w-full  text-gray-900 dark:text-white">
       <div className="w-full h-48 md:h-60 lg:h-80 bg-gray-200 dark:bg-black flex flex-col justify-end items-center md:items-start  px-3 py-4 md:px-6 md:py-8 relative">
         <div className="absolute top-2 right-3 md:right-6">
           <ThemeSwitcher />

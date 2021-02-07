@@ -9,13 +9,18 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home
-        heading="Hi I'm Mohamad Tarhini"
+        noCorners
+        heading="Hello, I'm Mohamad Tarhini"
         subHeading={
           <span>
-            I am a &#10102;-web developer, &#10103;-physicist and &#10104;-data
-            analyst based in France. This is my slice of the internet where I
-            show my work in &#10102;, briefly mention &#10103; and nearly say
-            almost about &#10104;.
+            I am a <strong>web developer</strong>, <strong>physicist </strong>
+            and <strong>data analyst</strong> based in France. That’s my photo
+            on the <span className="md:hidden">top</span>{" "}
+            <span className="test hidden md:inline">right</span>. The two little
+            icons in the bottom <span className="hidden md:inline">right</span>{" "}
+            of the screen are links to my social media accounts if you want to
+            contact me. Visit the rest of the website by clicking on one of the
+            three large buttons below.
           </span>
         }
         image={

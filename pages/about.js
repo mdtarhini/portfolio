@@ -52,7 +52,7 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               My answer to this question in mid-2020 would have been: “I am a
               physicist studying the state of the universe shortly after the big
               bang by analysing data at{" "}
-              <a href="https://home.cern/" className="underline">
+              <a href="https://home.cern/" className="underline" rel="noopener">
                 CERN
               </a>{" "}
               (the European Council for Nuclear Research)”. Much has happened
@@ -63,7 +63,11 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               (sometimes just for fun). Nevertheless, coding was only a tool to
               achieve my goals. In the summer of 2020, searching for something
               new to learn, I was introduced to web development on{" "}
-              <a href="https://www.freecodecamp.org/" className="underline">
+              <a
+                href="https://www.freecodecamp.org/"
+                className="underline"
+                rel="noopener"
+              >
                 FreeCodeCamp
               </a>{" "}
               and it just resonated with me! Soon enough, I started asking
@@ -101,6 +105,7 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               <a
                 href="https://tel.archives-ouvertes.fr/tel-01691725"
                 className="underline"
+                rel="noopener"
               >
                 my PhD
               </a>{" "}
@@ -112,6 +117,7 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               <a
                 href="https://in2p3.cnrs.fr/fr/cnrsinfo/mohamad-tarhini-post-doc-subatech-recu-le-prix-de-these-alice-en-juillet-2018"
                 className="underline"
+                rel="noopener"
               >
                 <i>thesis of the year</i>
               </a>{" "}
@@ -119,6 +125,7 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               <a
                 href="https://alice-collaboration.web.cern.ch/"
                 className="underline"
+                rel="noopener"
               >
                 ALICE-CERN collaboration
               </a>
@@ -126,6 +133,7 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               <a
                 href="https://www.sorbonne.fr/la-chancellerie-des-universites-de-paris/v2la-chancellerie-des-universites-de-paris-recompense-lexcellence-universitaire-et-propose-des-prix/les-prix-universitaires/"
                 className="underline"
+                rel="noopener"
               >
                 2018 Chancellerie thesis prize
               </a>{" "}
@@ -134,7 +142,11 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               <br /> After defending my PhD in 2017, I continued working on the
               same thematic with CERN by starting a postdoctoral fellowship as
               lead data analyst at{" "}
-              <a href="http://www-subatech.in2p3.fr/fr/" className="underline">
+              <a
+                href="http://www-subatech.in2p3.fr/fr/"
+                className="underline"
+                rel="noopener"
+              >
                 SUBATECH
               </a>{" "}
               in Nantes-France. I was coordinator of a large analysis group (40+

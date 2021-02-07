@@ -7,7 +7,7 @@ const OneEducation = ({ data }) => {
       </div>
 
       <hr className="dark:border-eerie mb-2" />
-      <a href={data.where.link} className="">
+      <a href={data.where.link} className="" rel="noopener">
         {data.where.label}
       </a>
     </div>

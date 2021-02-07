@@ -13,6 +13,7 @@ const ThemeSwitcher = () => {
   if (stateTheme) {
     return (
       <button
+        title={`switch to ${theme === "light" ? "dark" : "light"} theme`}
         className={`w-14 h-7 rounded-full bg-white dark:bg-gray-800 relative  flex items-center font-bold`}
         onClick={toggleTheme}
       >
@@ -24,13 +25,17 @@ const ThemeSwitcher = () => {
             stateTheme === "light"
               ? "bg-yellow-500 border-yellow-500"
               : "bg-gray-700 border-white"
-          } transform translate-x-${stateTheme === "light" ? "0.5" : "7"}`}
+          } transform ${
+            stateTheme === "light" ? "translate-x-0.5" : "translate-x-7"
+          }`}
         ></div>
 
         <div
-          className={`transition duration-500 ease-in-out transform absolute right-1 -translate-x-${
-            stateTheme === "light" ? "0.5" : "8"
-          } ${stateTheme === "light" ? "text-yellow-500" : "text-white"}`}
+          className={`transition duration-500 ease-in-out transform absolute right-1 ${
+            stateTheme === "light"
+              ? "-translate-x-0.5 text-yellow-500"
+              : "-translate-x-8 text-white"
+          }`}
         >
           {stateTheme === "light" ? <FiSun /> : <FiMoon />}
         </div>

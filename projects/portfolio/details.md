@@ -5,7 +5,7 @@ description: "A remake of this website using Next.js static site generation"
 tags: ["react", "tailwind-css", "next.js"]
 thumbnail: "/projects/website.svg"
 thumbnailAlt: "A thumbnail as a sketch of my personal website home page"
-image: "/projects/personal-website.png"
+screenshot: "/projects/personal-website.png"
 ---
 
 ## Motivation

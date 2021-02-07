@@ -15,7 +15,7 @@ tags:
   ]
 thumbnail: "/projects/reactMac.svg"
 thumbnailAlt: "A thumbnail displaying apple logo inside a react-JS logo"
-image: "/projects/unune.png"
+screenshot: "/projects/macos.png"
 website: "#"
 github: "#"
 ---

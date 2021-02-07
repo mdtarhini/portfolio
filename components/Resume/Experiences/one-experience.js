@@ -8,7 +8,7 @@ const OneExperience = ({ data }) => {
 
       <hr className="dark:border-eerie mb-2" />
       <p>
-        <a href={data.where.link} className="font-bold">
+        <a href={data.where.link} className="font-bold" rel="noopener">
           {data.where.label}
         </a>
       </p>
