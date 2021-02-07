@@ -119,8 +119,7 @@ const skills = {
 
       root: {
         label: "Root-Cern",
-        icon:
-          "https://root.cern.ch/img/logos/ROOT_Logo/misc/generic-logo-color-512.png",
+        icon: "/skills/root-logo.png",
         year: 2014,
         mood: "🙂",
         about: "This C++ framework got me a PhD.",

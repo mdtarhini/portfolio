@@ -1,3 +1,4 @@
+import Image from "next/image";
 const Message = ({ fromMe, body }) => {
   return (
     <div
@@ -6,11 +7,15 @@ const Message = ({ fromMe, body }) => {
       }`}
     >
       {fromMe && (
-        <img
-          className="w-8 h-8  rounded-full mr-2 border-2 border-gray-800 dark:border-white"
-          src="/profile.jpg"
-          alt="profile image in chat"
-        />
+        <div className="w-8 h-8 flex-shrink-0 rounded-full mr-2 border-2 border-gray-800 dark:border-white relative">
+          <Image
+            src="/profile.jpg"
+            alt="profile image in chat"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-full"
+          />
+        </div>
       )}
 
       <div

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Footer from "../components/Footer/footer";
 import Home from "../components/Home/Home";
 export default function Index() {
@@ -24,11 +25,17 @@ export default function Index() {
           </span>
         }
         image={
-          <img
-            className="w-16 h-16 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-64 xl:h-64 rounded-full md:rounded-none border-2 border-white mb-4 md:mb-0 md:absolute md:right-6 md:-bottom-20 lg:-bottom-24 xl:-bottom-32"
-            src="/profile.jpg"
-            alt="A portrait of Mohamad"
-          />
+          <div className=" mb-4 md:mb-0 md:absolute md:right-6 md:-bottom-20 lg:-bottom-24 xl:-bottom-32">
+            <div className="relative w-16 h-16 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-64 xl:h-64 rounded-full md:rounded-none border-2  border-white">
+              <Image
+                src="/profile.jpg"
+                alt="A portrait of Mohamad"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full md:rounded-none"
+              />
+            </div>
+          </div>
         }
       />
 

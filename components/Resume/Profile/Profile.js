@@ -1,4 +1,5 @@
 import SectionTitle from "../Common/section-title";
+import Image from "next/image";
 import SocialMediaButton from "./social-media-button";
 import InfoItem from "./info-item";
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
@@ -6,11 +7,13 @@ const Profile = ({ email, linkedInLink, githubLink, twitterLink }) => {
   return (
     <div>
       <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 items-center justify-center md:justify-start md:space-x-4 w-full text-center md:text-left">
-        <div className="w-28 md:w-36 max-w-full border-2 border-black dark:border-white rounded-full flex items-center justify-center p-1">
-          <img
-            className="object-fill w-full h-full rounded-full"
+        <div className="w-28 md:w-36 h-28 md:h-36 max-w-full border-2 border-white rounded-full flex items-center justify-center relative">
+          <Image
+            className="rounded-full"
             src="/profile.jpg"
             alt="profile image on resume"
+            layout="fill"
+            objectFit="cover"
           />
         </div>
         <div>

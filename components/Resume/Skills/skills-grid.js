@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GrFormClose } from "react-icons/gr";
 import ListOfSkills from "./ListOfSkills";
 import SectionTitle from "../Common/section-title";
+import Image from "next/image";
 const SkillsGrid = ({ title }) => {
   const [selectedCategory, selectCategory] = useState("web");
   const [disclaimerVisibility, setDisclaimerVisibility] = useState(false);
@@ -25,11 +26,13 @@ const SkillsGrid = ({ title }) => {
                   onClick={() => selectSkill(skillKey)}
                 >
                   <div className="rounded-full w-16 h-16 md:w-20 md:h-20 flex justify-center items-center  bg-gray-200 dark:bg-gray-800">
-                    <img
-                      src={skill.icon}
-                      className="opacity-60 w-8 h-8 md:w-12 md:h-12 transition duration-300 ease-in-out transform hover:scale-110 hover:opacity-100"
-                      alt={`${skill.label} icon`}
-                    />
+                    <div className="relative w-8 h-8 md:w-12 md:h-12 transition duration-300 ease-in-out transform hover:scale-110">
+                      <Image
+                        src={skill.icon}
+                        alt={`${skill.label} icon`}
+                        layout="fill"
+                      />
+                    </div>
                   </div>
 
                   <span className="text-base mt-1">{skill.label}</span>
@@ -47,10 +50,11 @@ const SkillsGrid = ({ title }) => {
     return (
       <div className="py-4 px-4 relative">
         <div className="flex items-center">
-          <img
+          <Image
             src={skill.icon}
-            className="w-8 h-8 md:w-12 md:h-12"
             alt={`${skill.label} icon`}
+            width={50}
+            height={50}
           />
           <span className="text-2xl font-bold ml-2">{skill.label}</span>
         </div>
