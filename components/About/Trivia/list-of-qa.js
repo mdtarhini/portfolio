@@ -130,17 +130,6 @@ const ListOfQA = [
       },
     ],
   },
-  {
-    id: "other",
-    label: "Other questions",
-    templateQuestion: false,
-    subOptions: [
-      {
-        id: "nationality",
-        question: "Where are you from ?",
-        answer: "I am from Lebanon and based in France.",
-      },
-    ],
-  },
+  
 ];
 export default ListOfQA;

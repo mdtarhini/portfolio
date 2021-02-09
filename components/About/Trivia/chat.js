@@ -12,7 +12,7 @@ const Chat = () => {
     {
       fromMe: true,
       body:
-        "Hi again, here are some trivia about me. Select a question from the list below 😀",
+        "Hi again, here are some trivia about me. Select a question from the list below if you want😀",
     },
   ]);
   //-------------------------------------------------------------------------//
