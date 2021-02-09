@@ -1,13 +1,13 @@
 ---
-title: "Career change"
+title: "Change together"
 index: 2
-description: "A social network for people seeking career changes"
+description: "A fullstack social network application for people seeking career changes. It includes posting, comments, messages, notifications..."
 tags: ["react", "react-hooks", "react-router", "firebase"]
 thumbnail: "/projects/job.svg"
 thumbnailAlt: "A thumbnail displaying four persons exchanging ideas"
 screenshot: "/projects/career-change.png"
-website: "#"
-github: "#"
+website: "https://career-change.vercel.app/"
+github: "https://github.com/mdtarhini/change-career"
 ---
 
 ## Motivation

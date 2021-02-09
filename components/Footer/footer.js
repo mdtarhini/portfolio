@@ -18,10 +18,10 @@ const Footer = () => {
         <span>
           <span className="sr-only">copyright</span>&#169;
         </span>
-        2021 Mohamad Tarhini. All rights reserved.
+        2021 Mohamad Tarhini.
       </p>
 
-      <div className="flex space-x-2 text-base test-hover:bg-yellow-200">
+      <address className="flex space-x-2 text-base">
         {social.map((item) => {
           return (
             <a
@@ -36,7 +36,7 @@ const Footer = () => {
             </a>
           );
         })}
-      </div>
+      </address>
     </div>
   );
 };

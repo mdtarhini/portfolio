@@ -6,8 +6,8 @@ tags: ["react", "firebase", "REST api", "tailwind-css"]
 thumbnail: "/projects/thinking.svg"
 thumbnailAlt: "A thumbnail displaying a thinking emoji"
 screenshot: "/projects/unune.png"
-website: "#"
-github: "#"
+website: "https://un-une.vercel.app/"
+github: "https://github.com/mdtarhini/un-une"
 ---
 
 ## Motivation

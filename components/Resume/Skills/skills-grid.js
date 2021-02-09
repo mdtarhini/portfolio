@@ -59,7 +59,7 @@ const SkillsGrid = ({ title }) => {
           <span className="text-2xl font-bold ml-2">{skill.label}</span>
         </div>
         <div className="ml-2">
-          <ul className="mt-1">
+          <ul className="mt-1 leading-loose">
             {skill.year && (
               <li className="list-disc list-inside">
                 <strong>Years of experience:</strong> ~
@@ -113,7 +113,7 @@ const SkillsGrid = ({ title }) => {
           return (
             <button
               key={category}
-              className={`flex items-center w-1/2 justify-center px-4 md:px-4 font-semibold  ${
+              className={`flex items-center w-1/2 justify-center px-4 md:px-4 font-semibold focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500 ${
                 category === selectedCategory
                   ? "bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-100"
                   : "w-16 md:w-1/2"

@@ -9,26 +9,28 @@ const Contact = ({ email, twitter, linkedIn }) => {
     <div>
       <p>
         If you have any question or comment or just want to say hi, you can send
-        me an email on <strong className="select-all">{email}</strong>.
+        me an email on{" "}
+        <address>
+          <strong className="select-all">{email}</strong>.
+        </address>
       </p>
 
       <p>You can also find me on social media:</p>
-      <ul className="flex flex-wrap">
+      <address className="flex flex-wrap">
         {social.map((item) => {
           return (
-            <li key={item.label}>
-              <a
-                className="flex space-x-2 mr-6 mb-2 items-center underline"
-                href={item.link}
-                rel="noopener"
-              >
-                <span className="text-2xl">{item.icon}</span>
-                <span className="">{item.label}</span>
-              </a>
-            </li>
+            <a
+              key={item.label}
+              className="flex space-x-2 mr-6 mb-2 items-center underline"
+              href={item.link}
+              rel="noopener"
+            >
+              <span className="text-2xl">{item.icon}</span>
+              <span className="">{item.label}</span>
+            </a>
           );
         })}
-      </ul>
+      </address>
     </div>
   );
 };

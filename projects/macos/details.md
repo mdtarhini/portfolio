@@ -1,7 +1,7 @@
 ---
-title: "Mac-OS App clones"
+title: "macOS app clones"
 index: 1
-description: "A collection of macos-apps fullstack mockups using React and node-JS."
+description: "A collection of fullstack applications inspired by macOS using React and node-JS"
 tags:
   [
     "react",
@@ -16,8 +16,8 @@ tags:
 thumbnail: "/projects/reactMac.svg"
 thumbnailAlt: "A thumbnail displaying apple logo inside a react-JS logo"
 screenshot: "/projects/macos.png"
-website: "#"
-github: "#"
+website: "https://macos-react.herokuapp.com/"
+github: "https://github.com/mdtarhini/MacOsReact"
 ---
 
 ## Motivation

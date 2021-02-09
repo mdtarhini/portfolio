@@ -13,16 +13,16 @@ export default function Index() {
         noCorners
         heading="Hello, I'm Mohamad Tarhini"
         subHeading={
-          <span>
+          <p>
             I am a <strong>web developer</strong>, <strong>physicist </strong>
             and <strong>data analyst</strong> based in France. That’s my photo
             on the <span className="md:hidden">top</span>{" "}
             <span className="test hidden md:inline">right</span>. The two little
             icons in the bottom <span className="hidden md:inline">right</span>{" "}
             of the screen are links to my social media accounts if you want to
-            contact me. Visit the rest of the website by clicking on one of the
-            three large buttons below.
-          </span>
+            contact me. The rest of the website can be accessed via these three
+            large buttons.
+          </p>
         }
         image={
           <div className=" mb-4 md:mb-0 md:absolute md:right-6 md:-bottom-20 lg:-bottom-24 xl:-bottom-32">
@@ -39,9 +39,9 @@ export default function Index() {
         }
       />
 
-      <div className="w-full mt-auto px-4 xl:px-0">
+      <footer className="w-full mt-auto px-4 xl:px-0">
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 }

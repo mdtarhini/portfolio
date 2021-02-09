@@ -57,7 +57,7 @@ const skills = {
         label: "D3-JS",
         icon: "/skills/d3.svg",
         year: 2020,
-        mood: "🙂",
+        mood: "😮",
         about:
           "As a data analyst, data visualisation is essential to me. I found D3 to be very powerful compared to what I used before. I didn’t practice too much so far, but I will be glad to use it when needed.",
       },

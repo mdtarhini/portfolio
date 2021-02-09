@@ -2,20 +2,17 @@ import React, { useState, useRef, useEffect } from "react";
 import { VscHubot, VscClose } from "react-icons/vsc";
 import Message from "./message";
 
-//Need this one for the chat background image (not using tailwind)
-import { useTheme } from "next-themes";
 import NestedDropDown from "./nested-dropdown";
 
 const Chat = () => {
-  const { theme } = useTheme();
-
   //-------------------------------------------------------------------------//
   // States
   const [chatVisibility, setChatVisibility] = useState(false);
   const [messages, setMessages] = useState([
     {
       fromMe: true,
-      body: "welcom",
+      body:
+        "Hi again, here are some trivia about me. Select a question from the list below 😀",
     },
   ]);
   //-------------------------------------------------------------------------//

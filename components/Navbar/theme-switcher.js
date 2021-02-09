@@ -13,7 +13,7 @@ const ThemeSwitcher = () => {
   if (stateTheme) {
     return (
       <button
-        title={`switch to ${theme === "light" ? "dark" : "light"} theme`}
+        // title={`switch to ${theme === "light" ? "dark" : "light"} theme`}
         className={`w-14 h-7 rounded-full bg-white dark:bg-gray-800 relative  flex items-center font-bold`}
         onClick={toggleTheme}
       >

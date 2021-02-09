@@ -36,7 +36,7 @@ const ProjectCard = ({
             {tags.map((tag, index) => {
               return (
                 <div
-                  className="rounded-md px-3 py-0.5 mb-1 mr-2 bg-green-300 text-sm text-green-900"
+                  className="rounded-sm px-3 py-0.5 mb-1 mr-2 border border-yellow-400 bg-yellow-200 text-sm text-gray-900 dark:border-blue-300 dark:bg-gray-700 dark:text-blue-300"
                   key={index}
                 >
                   {tag}

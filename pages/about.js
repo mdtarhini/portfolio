@@ -26,26 +26,29 @@ const About = ({ email, twitterLink, linkedInLink }) => {
           <title>About M. Tarhini</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="w-full py-10 px-3 md:px-10 lg:px-24 xl:px-44 leading-loose max-w-7xl text-lg">
-          <div className="w-full mt-2">
-            <h1 className="text-4xl font-bold mb-10">About me</h1>
+        <main className="w-full py-10 px-3 md:px-10 lg:px-24 xl:px-44 leading-loose max-w-7xl md:text-lg md:leading-loose">
+          <h1 className="text-4xl font-bold mb-10">About me</h1>
+
+          <section className="w-full mt-2">
             <div className="border-2 w-full border-gray-900 dark:border-white  rounded-sm relative p-4">
               <div className="bg-white dark:bg-blackish absolute -top-3 left-5 h-6 flex items-center text-2xl font-bold">
                 TL;DR
               </div>
-              <ul className="md:text-lg leading-loose">
+              <ul className="leading-loose">
                 <li className="list-inside list-disc">
                   I love <strong>programming</strong>.
                 </li>
                 <li className="list-inside list-disc">
-                  I worked as a <strong>data analyst</strong> for over 5 years.
+                  I worked as a <strong>physicist and data analyst</strong> for
+                  over 5 years.
                 </li>
                 <li className="list-inside list-disc">
                   I found a new passion for <strong>web development</strong>.
                 </li>
               </ul>
             </div>
-          </div>
+          </section>
+
           <section className="mt-10 md:mb-40">
             <Heading text="Overview" subText="Who am I ?" />
             <p className="">
@@ -95,7 +98,8 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               For me, what makes the web development field so interesting is
               that you don’t stop learning. There is always something that you
               don’t know, which makes it an enjoyable challenge. That said, I am
-              confident that I am ready to have a career in this field.
+              confident that I am ready to start building a career in this
+              field.
             </p>
           </section>
           <section className="mt-10">
@@ -109,11 +113,11 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               >
                 my PhD
               </a>{" "}
-              in particle physics about studying the state of matter in the
-              universe microseconds after the Big-Bang. My work involved mainly
-              analysing and interpreting terabytes of data collected at CERN. My
-              results have led to the publication of 4 papers on the subject in
-              international journals. My PhD thesis was voted the{" "}
+              in particle physics. It was about studying the state of matter in
+              the universe microseconds after the Big-Bang. My work involved
+              mainly analysing and interpreting terabytes of data collected at
+              CERN. My results have led to the publication of 4 papers on the
+              subject in international journals. My PhD thesis was voted the{" "}
               <a
                 href="https://in2p3.cnrs.fr/fr/cnrsinfo/mohamad-tarhini-post-doc-subatech-recu-le-prix-de-these-alice-en-juillet-2018"
                 className="underline"
@@ -137,7 +141,7 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               >
                 2018 Chancellerie thesis prize
               </a>{" "}
-              (awarded yearly to the best theses completed in Paris’
+              (awarded yearly to the best theses completed in Paris
               universities).
               <br /> After defending my PhD in 2017, I continued working on the
               same thematic with CERN by starting a postdoctoral fellowship as
@@ -157,10 +161,9 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               progress in understanding the universe.
               <br />
               <strong>
-                You can read more about my skills, experience and education in
-                my
+                You can read more about my skills, experience and education in{" "}
                 <Link href="/resume">
-                  <span className="underline"> resume</span>
+                  <a className="underline">my resume</a>
                 </Link>
                 .
               </strong>
