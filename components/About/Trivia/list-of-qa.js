@@ -91,7 +91,7 @@ const ListOfQA = [
       },
       {
         id: "sport",
-        question: "Video Game",
+        question: "Sport",
         answer:
           "I used to watch Football (aka soccer) which I rarely do now. Personally, I enjoy running",
       },
