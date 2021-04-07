@@ -1,6 +1,6 @@
 ---
 title: "macOS app clones"
-index: 1
+index: 2
 description: "A collection of fullstack applications inspired by macOS using React and node-JS"
 tags:
   [

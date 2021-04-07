@@ -14,7 +14,7 @@ const Home = ({ heading, subHeading, image, noCorners }) => {
       </header>
 
       <main className="w-full  md:max-w-xl xl:max-w-2xl flex flex-col justify-center space-y-5 md:space-y-10 px-3 py-4 md:px-6 md:py-8">
-        <p
+        <div
           className={`w-full relative md:text-lg lg:text-xl lg:leading-loose break-words text-justify ${
             !noCorners ? "p-5" : ""
           }`}
@@ -26,7 +26,7 @@ const Home = ({ heading, subHeading, image, noCorners }) => {
           {!noCorners && (
             <span className="absolute text-6xl bottom-0 right-0">&#8991;</span>
           )}
-        </p>
+        </div>
         <NavCards />
       </main>
     </div>

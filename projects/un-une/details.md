@@ -1,6 +1,6 @@
 ---
 title: "Un or Une ?"
-index: 3
+index: 4
 description: "A React+Firebase application which tells you whether a French noun is feminine (une) or masculine (un). Signed-in users can also save searched words."
 tags: ["react", "firebase", "REST api", "tailwind-css"]
 thumbnail: "/projects/thinking.svg"

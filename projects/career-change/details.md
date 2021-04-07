@@ -1,6 +1,6 @@
 ---
 title: "Change together"
-index: 2
+index: 3
 description: "A fullstack social network application for people seeking career changes. It includes posting, comments, messages, notifications..."
 tags: ["react", "react-hooks", "react-router", "firebase"]
 thumbnail: "/projects/job.svg"
