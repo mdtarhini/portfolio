@@ -5,6 +5,7 @@ import Chat from "../components/About/Trivia/chat";
 import Contact from "../components/Contact/contact";
 import Timeline from "../components/About/timeline/timeline";
 import Heading from "../components/Common/heading";
+import SkillsGrid from "../components/About/Skills/skills-grid";
 
 export async function getStaticProps() {
   const commonData = await import("../data/common/common.json");
@@ -102,6 +103,7 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               field.
             </p>
           </section>
+
           <section className="mt-10">
             <Heading text="Background" subText="Award winning physicist" />
             <p className="">
@@ -161,13 +163,26 @@ const About = ({ email, twitterLink, linkedInLink }) => {
               progress in understanding the universe.
               <br />
               <strong>
-                You can read more about my skills, experience and education in{" "}
+                You can read more about my experience and education in{" "}
                 <Link href="/resume">
                   <a className="underline">my resume</a>
                 </Link>
                 .
               </strong>
             </p>
+          </section>
+
+          <section className="mt-10">
+            <Heading text="Technical Skills" />
+            <p className="mb-2">
+              The list below include only technologies I am currently
+              comfortable using. There is no mention of my proficiency level in
+              each one as it is very relative and often misleading. I include
+              the number years' experience for each technology as it is
+              quantitative, but it also does not directly reflect my proficiency
+              level.
+            </p>
+            <SkillsGrid />
           </section>
 
           <section className="my-10">

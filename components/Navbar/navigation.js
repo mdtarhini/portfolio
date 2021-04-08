@@ -5,12 +5,11 @@ import {
   HiCode,
   HiOutlineInformationCircle,
 } from "react-icons/hi";
-import { RiPagesLine } from "react-icons/ri";
+
 const elements = [
   { label: "Home", icon: <HiOutlineHome />, href: "/" },
   { label: "About", icon: <HiOutlineInformationCircle />, href: "/about" },
-  { label: "Projects", icon: <HiCode />, href: "/projects" },
-  { label: "Resume", icon: <RiPagesLine />, href: "/resume" },
+  { label: "Work", icon: <HiCode />, href: "/projects" },
 ];
 const Navigation = ({ toggleDrawer }) => {
   const router = useRouter();

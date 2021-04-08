@@ -8,14 +8,8 @@ import Certifications from "../components/Resume/Certifications/Certifications";
 import Experiences from "../components/Resume/Experiences/Experiences";
 import Profile from "../components/Resume/Profile/Profile";
 import PageLayout from "../components/Common/page-layout";
-import SkillsGrid from "../components/Resume/Skills/skills-grid";
+
 const sections = [
-  {
-    id: "resume-skills",
-    title: "Technical Skills",
-    dataKey: "skills",
-    content: <SkillsGrid />,
-  },
   {
     id: "resume-experiences",
     title: "Experience",
@@ -71,7 +65,7 @@ const Resume = ({ data, email, githubLink, twitterLink, linkedInLink }) => {
             className="w-full max-w-5xl  text-black dark:text-white relative shadow-lg dark:shadow-md"
           >
             <a
-              href="https://docs.google.com/uc?export=download&id=1SkoMhMi-8rIG5c7b7CJMr3Abfpkdh95e" 
+              href="https://docs.google.com/uc?export=download&id=1SkoMhMi-8rIG5c7b7CJMr3Abfpkdh95e"
               download
               className="absolute top-2 right-2 text-2xl w-12 h-12 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 flex justify-center items-center"
               title="download as pdf"

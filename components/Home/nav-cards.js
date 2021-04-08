@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { TiUser } from "react-icons/ti";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { RiPagesLine } from "react-icons/ri";
 
 const cards = [
   { label: "About", icon: <TiUser />, href: "/about" },
@@ -10,12 +9,11 @@ const cards = [
     icon: <AiOutlineFundProjectionScreen />,
     href: "/projects",
   },
-  { label: "Resume", icon: <RiPagesLine />, href: "/resume" },
 ];
 
 const NavCards = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-2 md:space-y-0">
+    <div className="w-full flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-2  md:space-y-0">
       {cards.map((card) => {
         return (
           <Link key={card.label} href={card.href}>

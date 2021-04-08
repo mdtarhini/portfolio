@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-blackish 2xl:px-60">
       <Head>
-        <title>M. Tarhini Portfolio</title>
+        <title>M. Tarhini | Personal website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home
@@ -20,7 +20,7 @@ export default function Index() {
             <span className="test hidden md:inline">right</span>. The two little
             icons in the bottom <span className="hidden md:inline">right</span>{" "}
             of the screen are links to my social media accounts if you want to
-            contact me. The rest of the website can be accessed via these three
+            contact me. The rest of the website can be accessed via these two
             large buttons.
           </p>
         }
