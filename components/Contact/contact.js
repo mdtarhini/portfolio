@@ -6,17 +6,14 @@ const Contact = ({ email, twitter, linkedIn }) => {
     { label: "LinkedIn", icon: <GrLinkedinOption />, link: linkedIn },
   ];
   return (
-    <div>
+    <address>
       <p>
         If you have any question or comment or just want to say hi, you can send
-        me an email on{" "}
-        <address>
-          <strong className="select-all">{email}</strong>.
-        </address>
+        me an email on <strong className="select-all">{email}</strong>
       </p>
 
       <p>You can also find me on social media:</p>
-      <address className="flex flex-wrap">
+      <div className="flex flex-wrap">
         {social.map((item) => {
           return (
             <a
@@ -30,8 +27,8 @@ const Contact = ({ email, twitter, linkedIn }) => {
             </a>
           );
         })}
-      </address>
-    </div>
+      </div>
+    </address>
   );
 };
 

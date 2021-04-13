@@ -116,6 +116,22 @@ const skills = {
         about:
           "Although my Tensorflow skills are relatively limited, I kept it in the list as I will surely go back and work more on it.",
       },
+      postgresql: {
+        label: "PostgreSQL",
+        icon: "/skills/icons8-postgresql.svg",
+        year: 2018,
+        mood: "🤔",
+        about:
+          "Although I haven't made large SQL projects, I believe I am comfortable working on it when needed.",
+      },
+
+      matlab: {
+        label: "Matlab",
+        icon: "/skills/icons8-matlab.svg",
+        year: 2016,
+        mood: "🙂",
+        about: "",
+      },
 
       root: {
         label: "Root-Cern",

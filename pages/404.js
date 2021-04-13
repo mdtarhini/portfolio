@@ -26,7 +26,6 @@ export default function Custom404({ heading, subHeading }) {
             404
           </div>
         }
-        noCorners
       />
 
       <div className="w-full mt-auto px-4 xl:px-0">

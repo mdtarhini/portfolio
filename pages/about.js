@@ -50,62 +50,13 @@ const About = ({ email, twitterLink, linkedInLink }) => {
             </div>
           </section>
 
-          <section className="mt-10 md:mb-40">
-            <Heading text="Overview" subText="Who am I ?" />
-            <p className="">
-              My answer to this question in mid-2020 would have been: “I am a
-              physicist studying the state of the universe shortly after the big
-              bang by analysing data at{" "}
-              <a href="https://home.cern/" className="underline" rel="noopener">
-                CERN
-              </a>{" "}
-              (the European Council for Nuclear Research)”. Much has happened
-              since then, and now I would identify myself as a web developer. It
-              is all about my passion for programming. <br />
-              As a PhD student and later as a physicist, programming was a daily
-              activity for me. If not for work, I would learn something new
-              (sometimes just for fun). Nevertheless, coding was only a tool to
-              achieve my goals. In the summer of 2020, searching for something
-              new to learn, I was introduced to web development on{" "}
-              <a
-                href="https://www.freecodecamp.org/"
-                className="underline"
-                rel="noopener"
-              >
-                FreeCodeCamp
-              </a>{" "}
-              and it just resonated with me! Soon enough, I started asking
-              myself, “why don’t I become a full-time web developer ?”
-            </p>
-            <div className="my-20">
-              <Timeline />
-            </div>
-          </section>
-          <section className="mt-10">
-            <Heading
-              text="Current status"
-              subText="Turning my passion into a career"
-            />
-            <p className="">
-              I spend most of my web development time on the front-end. After
-              learning and becoming comfortable with HTML, CSS and JS, I started
-              learning React-JS, which I quickly saw its potential. After
-              investing considerable time with React, I picked up Next-JS, the
-              framework I used to build this website.
-              <br /> Along the way, I also became familiar with back-end
-              technologies like node-JS and Firebase, which I used to build some
-              personal projects.
-              <br />
-              For me, what makes the web development field so interesting is
-              that you don’t stop learning. There is always something that you
-              don’t know, which makes it an enjoyable challenge. That said, I am
-              confident that I am ready to start building a career in this
-              field.
-            </p>
+          <section className="mt-10 md:mb-44">
+            <Heading text="Who am I ?" />
+            <Timeline />
           </section>
 
           <section className="mt-10">
-            <Heading text="Background" subText="Award winning physicist" />
+            <Heading text="Award winning physicist" />
             <p className="">
               In late 2014, I started{" "}
               <a
@@ -169,6 +120,37 @@ const About = ({ email, twitterLink, linkedInLink }) => {
                 </Link>
                 .
               </strong>
+            </p>
+          </section>
+
+          <section className="mt-10">
+            <Heading text="Self taught web developper" />
+            <p className="">
+              In the summer of 2020, searching for something new to learn, I was
+              introduced to web development on{" "}
+              <a
+                href="https://www.freecodecamp.org/"
+                className="underline"
+                rel="noopener"
+              >
+                FreeCodeCamp
+              </a>{" "}
+              and it just resonated with me! Since then, I have spent a
+              significant amount of time on learning different web technologies,
+              particularly on the front-end. After learning and becoming
+              comfortable with HTML, CSS and JS, I started learning React-JS,
+              which I quickly saw its potential. After investing considerable
+              time with React, I picked up Next-JS, the framework I used to
+              build this website.
+              <br /> Along the way, I also became familiar with back-end
+              technologies like node-JS and Firebase, which I used to build some
+              personal projects.
+              <br />
+              For me, what makes the web development field so interesting is
+              that you don’t stop learning. There is always something that you
+              don’t know, which makes it an enjoyable challenge. That said, I am
+              confident that I am ready to start building a career in this
+              field.
             </p>
           </section>
 

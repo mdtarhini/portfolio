@@ -1,5 +1,4 @@
 // tailwind.config.js
-const { colors } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./pages/**/*.js", "./components/**/*.js"],
@@ -7,9 +6,14 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      minHeight: {
+        sm: "9rem",
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            "code::before": false,
+            "code::after": false,
             color: theme("colors.gray.900"),
             a: {
               color: "#3182ce",
@@ -40,13 +44,7 @@ module.exports = {
               "margin-top": "1em",
               "margin-bottom": "0.5em",
             },
-            code: {
-              color: "white",
-              "background-color": theme("colors.gray.700"),
-              "&:before, &:after": {
-                display: "none",
-              },
-            },
+
             p: {
               color: theme("colors.gray.900"),
               "margin-top": "0",
@@ -70,6 +68,8 @@ module.exports = {
 
         dark: {
           css: {
+            "code::before": false,
+            "code::after": false,
             color: "white",
             a: {
               color: "#3182ce",
@@ -100,17 +100,18 @@ module.exports = {
               "margin-top": "1em",
               "margin-bottom": "0.5em",
             },
-            code: {
-              color: theme("colors.gray.800"),
-              "background-color": "white",
-              "&:before, &:after": {
-                display: "none",
-              },
-            },
             p: {
               color: "white",
               "margin-top": "0",
               "margin-bottom": "1em",
+            },
+            code: {
+              color: "white",
+            },
+            pre: {
+              code: {
+                color: "inherit",
+              },
             },
             "ul > li": {
               "&::before": {

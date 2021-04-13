@@ -2,7 +2,20 @@ import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/Footer/footer";
 import Home from "../components/Home/Home";
-export default function Index() {
+import TILList from "../components/TIL-List";
+import { getTilsData } from "../lib/til";
+
+export async function getStaticProps() {
+  const tilsData = await getTilsData(5);
+
+  return {
+    props: {
+      tilsData: tilsData,
+    },
+  };
+}
+
+export default function Index({ tilsData }) {
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-blackish 2xl:px-60">
       <Head>
@@ -10,7 +23,6 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home
-        noCorners
         heading="Hello, I'm Mohamad Tarhini"
         subHeading={
           <p>
@@ -18,10 +30,10 @@ export default function Index() {
             and <strong>data analyst</strong> based in France. That’s my photo
             on the <span className="md:hidden">top</span>{" "}
             <span className="test hidden md:inline">right</span>. The two little
-            icons in the bottom <span className="hidden md:inline">right</span>{" "}
-            of the screen are links to my social media accounts if you want to
-            contact me. The rest of the website can be accessed via these two
-            large buttons.
+            icons in the top left of the screen are my social media links if you
+            want to contact me. The rest of the website can be accessed via the
+            next large buttons. Scroll down to see what I have learned today, or
+            yesterday, or a month ago..
           </p>
         }
         image={
@@ -37,7 +49,9 @@ export default function Index() {
             </div>
           </div>
         }
-      />
+      >
+        <TILList tilsData={tilsData} withShowAllButton />
+      </Home>
 
       <footer className="w-full mt-auto px-4 xl:px-0">
         <Footer />

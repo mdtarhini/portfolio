@@ -1,16 +1,5 @@
-import { GrTwitter, GrLinkedinOption } from "react-icons/gr";
-const social = [
-  {
-    label: "Twitter",
-    icon: <GrTwitter />,
-    link: "https://twitter.com/mdtarhini",
-  },
-  {
-    label: "LinkedIn",
-    icon: <GrLinkedinOption />,
-    link: "https://www.linkedin.com/in/mdtarhini/",
-  },
-];
+import SocialIcons from "./SocialIcons";
+
 const Footer = () => {
   return (
     <div className=" w-full mt-20 flex flex-col space-y-3 md:flex-row justify-center md:justify-between items-center text-gray-600 dark:text-gray-400">
@@ -21,22 +10,7 @@ const Footer = () => {
         2021 Mohamad Tarhini.
       </p>
 
-      <address className="flex space-x-2 text-base">
-        {social.map((item) => {
-          return (
-            <a
-              className="w-6 h-6 hover:text-black dark:hover:text-white"
-              key={item.label}
-              href={item.link}
-              rel="noopener"
-              title={`my ${item.label}`}
-            >
-              {item.icon}
-              <span className="sr-only">{item.label}</span>
-            </a>
-          );
-        })}
-      </address>
+      <SocialIcons />
     </div>
   );
 };

@@ -4,12 +4,19 @@ import {
   HiOutlineHome,
   HiCode,
   HiOutlineInformationCircle,
+  HiOutlineLightBulb,
 } from "react-icons/hi";
 
 const elements = [
   { label: "Home", icon: <HiOutlineHome />, href: "/" },
   { label: "About", icon: <HiOutlineInformationCircle />, href: "/about" },
   { label: "Work", icon: <HiCode />, href: "/projects" },
+  {
+    label: "TIL",
+    icon: <HiOutlineLightBulb />,
+    href: "/til",
+    title: "Today I Learned",
+  },
 ];
 const Navigation = ({ toggleDrawer }) => {
   const router = useRouter();
@@ -25,6 +32,7 @@ const Navigation = ({ toggleDrawer }) => {
                   : ""
               }`}
               onClick={toggleDrawer ? toggleDrawer : null}
+              title={element.title}
             >
               <span className="text-3xl mr-2 md:hidden">{element.icon}</span>
               {element.label}
